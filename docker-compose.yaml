@@ -1,0 +1,15 @@
+version: "3.8"
+services:
+  api:
+    build: ./api
+    container_name: api_c
+    ports:
+      - '4000:4000'
+  myapp:  
+    build: /Users/haziqmudzakir/Downloads/HELLO-WORLD-APP/myapp/src
+    container_name: myapp_c
+    ports:
+      - '3000:3000'   
+    stdin_open: true
+    tty: true
+    
