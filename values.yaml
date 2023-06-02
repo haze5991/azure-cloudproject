@@ -1,0 +1,9 @@
+replicaCount: 1
+image:
+  repository: haze5991/helloworld-app
+  tag: latest
+  pullPolicy: IfNotPresent
+service:
+  name: helloworld-service
+  type: ClusterIP
+  port: 8080
